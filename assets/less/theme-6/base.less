@@ -154,6 +154,7 @@ p {
     background: #fff;
     padding: 60px;
     padding-right: 300px;
+    page-break-before: always;
     .section-title {
         text-transform: uppercase;
         font-size: 20px;
@@ -180,6 +181,7 @@ p {
     }
     .section {
         margin-bottom: 60px;
+	page-break-inside: avoid;
     }
     
     .experiences-section {
@@ -240,11 +242,11 @@ p {
     }
     .level-bar {
         height: 12px;
-        background: @smoky-white;
+        background: @smoky-white !important;
     }
     .level-bar-inner {
         height: 12px;
-        background: lighten(@theme-color, 15%);
+        background: lighten(@theme-color, 15%) !important;
     }
 }
 
